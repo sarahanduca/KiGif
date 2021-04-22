@@ -11,4 +11,10 @@ client.on("ready", () => {
 });
 client.login(process.env.BOTTOKEN);
 
-client.on("message", gotMessage);
+client.on("message", (msg) => {
+  let keyword = msg.content.split(" ");
+  let command = keyword.shift();
+  if (command.charAt(0) === "!") {
+    gotMessage(command, keyword, msg);
+  }
+});
