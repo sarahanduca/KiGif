@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import gif from "./gif.js";
-import { hi, hm } from "./nabo.js";
-
+import hi from "./nabo.js";
+import hm from "./nabo.js";
 dotenv.config();
 const commands = { gif, hi, hm };
 

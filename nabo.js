@@ -1,4 +1,4 @@
-export default async function (msg, keyword, command) {
+export default async function nabo(msg, keyword, command) {
   const urlHm =
     "https://cdn.discordapp.com/attachments/834142642995986492/834902925176078346/lixinhopensive.gif";
   const urlHi =
